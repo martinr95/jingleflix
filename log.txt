@@ -1,0 +1,37 @@
+***
+alpha_1-0
+First deploy, code works
+
+***
+alpha_1-1
+Mobile changes
+scroll snapping and fullscreen movies
+Added movies
+
+***
+alpha_1-2
+Color changes
+Css changes: mostly added shadows to all elements,
+
+***
+alpha_2-0
+New button "show all"
+New search bar
+Added movies
+
+***
+alpha_2-1
+Removed the "exclude tags" checkbox and added "ALL" as an option in the dropdown (added the code to show all if "ALL" is selected)
+TODO: Redisigning (MAJOR)
+
+
+~~~~~~~~~~~~~~~~~~~
+~~~~~ alpha_2 ~~~~~
+~~~~~~~~~~~~~~~~~~~
+Remake search field
+Text search
+#Display all (2-0)
+On click open and show more details (tags etc)
+New ranking based on 1-5 (easier to find movies)
+Option to exclude tags (first option should be empty)
+(also take away "exclude tags" option and replace it with "ALL" in the Dropdown to avoid mixing it up with excluded tags)

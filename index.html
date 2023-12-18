@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="start-title">JingleFlix</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,600&family=Vina+Sans&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/results.css" />
+  </head>
+  <body>
+    <main>
+      <!---->
+
+      <section class="header-wrapper">
+        <!--<h1>JingleFlix</h1>-->
+        <img
+          src="images/logo-schriftzug.png"
+          style="aspect-ratio: initial; height: 100px"
+        />
+      </section>
+
+      <!---->
+
+      <section class="quicksearch-wrapper">
+        <div class="quicksearch-div" style="grid-area: qs1">
+          <label>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Search for movies"
+            />
+          </label>
+        </div>
+        <div class="quicksearch-div" style="grid-area: qs2">
+          <button class="main-div-btn" id="search-all-btn">Search All</button>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="filter-wrapper">
+        <div class="filter-div" id="xmas-div" style="grid-area: a1">
+          <h4>Christmas Atmosphere</h4>
+          <label>
+            <input class="checkbox" type="checkbox" id="exclude-xmas" />
+            Exclude Christmas Atmosphere
+          </label>
+          <div id="xmas-level-slider">
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="xmas-level"
+            />
+          </div>
+        </div>
+
+        <div class="filter-div" id="rating-div" style="grid-area: a2">
+          <h4>Rating?</h4>
+          <label>
+            <input class="checkbox" type="checkbox" id="exclude-rating" />
+            Exclude Rating
+          </label>
+          <div id="rating-slider">
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="rating-level"
+            />
+          </div>
+        </div>
+
+        <div class="filter-div" id="temperature-div" style="grid-area: a3">
+          <h4>Hot (1) or cold (10) setting?</h4>
+          <label>
+            <input class="checkbox" type="checkbox" id="exclude-temperature" />
+            Exclude Temperature
+          </label>
+          <div id="temperature-slider">
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="temperature-level"
+            />
+          </div>
+        </div>
+
+        <div class="filter-div" id="tags-div" style="grid-area: a4">
+          <label> Included Tags </label>
+          <select
+            class="select-tags"
+            name="tags"
+            id="inclusion-tags-dropdown"
+          ></select>
+        </div>
+
+        <div class="filter-div" id="tags-div" style="grid-area: a5">
+          <label> Excluded Tags </label>
+          <select
+            class="select-tags"
+            name="tags"
+            id="exclusion-tags-dropdown"
+          ></select>
+        </div>
+
+        <div class="filter-div" id="filter-button-div" style="grid-area: a6">
+          <button class="main-div-btn" id="filter-button">Filter Movies</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- RESULTS -->
+
+    <div class="result-main"><div id="result-wrapper"></div></div>
+    <script src="./js/effects.js"></script>
+    <script type="module" src="./js/main.js" defer></script>
+  </body>
+</html>
