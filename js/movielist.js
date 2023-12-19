@@ -6,6 +6,7 @@ const movies = {
     classic: true,
     "modernClassic:": false,
     tags: ["classic", "comedy", "family"],
+    moreTags: ["bandits", "90s"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg",
     year: 1990,
@@ -20,6 +21,7 @@ const movies = {
     classic: true,
     "modernClassic:": false,
     tags: ["classic", "city", "family", "new york"],
+    moreTags: ["bandits", "travel", "toy store", "90s"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/5/50/Home_Alone_2.jpg",
     year: 1992,
@@ -50,7 +52,7 @@ const movies = {
     classic: false,
     "modernClassic:": false,
     tags: ["alternative", "animals", "comedy"],
-    moreTags: ["dogs"],
+    moreTags: ["dogs", "fashion"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/e/ef/One_hundred_and_one_dalmatians_ver2.jpg",
     year: 1996,
@@ -65,7 +67,7 @@ const movies = {
     classic: false,
     "modernClassic:": false,
     tags: ["alternative", "animals", "comedy"],
-    moreTags: ["dogs"],
+    moreTags: ["dogs", "fashion", "france"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/f/fe/102_dalmatians_poster.jpg",
     year: 2000,
@@ -80,6 +82,7 @@ const movies = {
     classic: false,
     "modernClassic:": false,
     tags: ["romance", "art"],
+    moreTags: ["photography"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/d/d0/The_Holiday_Calendar_poster.jpg",
     year: 2018,
@@ -94,6 +97,7 @@ const movies = {
     classic: true,
     "modernClassic:": false,
     tags: ["comedy", "family", "classic"],
+    moreTags: ["frosty", "suburbs", "community", "cruise"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/c/c9/Christmas_With_the_Kranks_poster.JPG",
     year: 2004,
@@ -108,6 +112,7 @@ const movies = {
     classic: false,
     "modernClassic:": true,
     tags: ["comedy", "romance"],
+    moreTags: [],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Love_Hard_poster.jpg/220px-Love_Hard_poster.jpg",
     year: 2021,
@@ -122,6 +127,7 @@ const movies = {
     classic: false,
     "modernClassic:": true,
     tags: ["comedy", "romance"],
+    moreTags: [],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/0/01/Holidate_film_poster.png",
     year: 2020,
@@ -135,7 +141,8 @@ const movies = {
     temperature: 9,
     classic: false,
     "modernClassic:": false,
-    tags: ["comedy", "romance", "netflix", "popcorn", "snow"],
+    tags: ["comedy", "romance", "popcorn", "snow"],
+    moreTags: ["netflix", "resort"],
     previewImg:
       "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdugDd2fIe3ZFozMC8PZAplUWXNVbiXHItbKgEMHR4bIC0eBRD",
     year: 2022,
@@ -150,6 +157,7 @@ const movies = {
     classic: false,
     "modernClassic:": true,
     tags: ["family", "adventure"],
+    moreTags: [],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/5/5e/The_Christmas_Chronicles.png",
     year: 2018,
@@ -164,6 +172,7 @@ const movies = {
     classic: false,
     "modernClassic:": true,
     tags: ["family", "adventure", "north pole", "snow"],
+    moreTags: ["mexico", "travel", "trip", "elves"],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/e/ef/The_Christmas_Chronicles_2.jpg",
     year: 2020,
@@ -178,6 +187,7 @@ const movies = {
     classic: false,
     "modernClassic:": false,
     tags: ["family", "romance"],
+    moreTags: ["warm"],
     previewImg:
       "https://m.media-amazon.com/images/M/MV5BMTQ2MjA0NDAwNF5BMl5BanBnXkFtZTcwOTU4MTM5MQ@@._V1_.jpg",
     year: 2008,
@@ -192,6 +202,7 @@ const movies = {
     classic: true,
     "modernClassic:": false,
     tags: ["family", "comedy", "old"],
+    moreTags: [],
     previewImg:
       "https://upload.wikimedia.org/wikipedia/en/5/53/NationalLampoonsChristmasVacationPoster.JPG",
     year: 1989,
@@ -223,22 +234,7 @@ const movies = {
       "modernClassic:": true,
       tags: ["fun", "comedy", "adults"],
     },
-    "The Christmas Chronicles": {
-      xmas: 6,
-      rating: 6,
-      temperature: 9,
-      classic: false,
-      "modernClassic:": true,
-      tags: [],
-    },
-    "The Christmas Chronicles 2": {
-      xmas: 6,
-      rating: 6,
-      temperature: 6,
-      classic: false,
-      "modernClassic:": true,
-      tags: [],
-    },
+   
     "The Grinch": {
       xmas: 9,
       rating: 6,

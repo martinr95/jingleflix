@@ -64,6 +64,22 @@ h1 {
   color: var(--red);
   filter: drop-shadow(0px 0px 5px rgb(171, 16, 16));
 }
+
+.version-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #d3d3d3;
+  padding: 1rem;
+  opacity: 0%;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.2s ease-in;
+}
+.version-info:hover {
+  opacity: 40%;
+}
+
 .header-wrapper {
   grid-area: header-wrapper;
   display: flex;
@@ -257,6 +273,4 @@ FILTER
     justify-content: space-evenly;
     align-items: center;
   }
-
-  
 }

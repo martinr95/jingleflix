@@ -1,5 +1,6 @@
 import movies from "./movielist.js";
 
+const resultMain = document.querySelector(".result-main");
 const inclusionTagsSet = new Set();
 const exclusionTagsSet = new Set();
 
@@ -86,6 +87,7 @@ function createMovieElement(title, details) {
 
 function displayMovies(filteredMovies) {
   const resultWrapper = document.getElementById("result-wrapper");
+
   resultWrapper.innerHTML = "";
 
   filteredMovies.forEach(([title, details]) => {
@@ -94,13 +96,16 @@ function displayMovies(filteredMovies) {
   });
 
   const gotoTop = document.createElement("div");
-  gotoTop.innerHTML = '<a href="#" onclick="scrollToTop()">Go Back</a>';
+  gotoTop.innerHTML = '<a href="#" onclick="scrollToTop()">Up</a>';
   gotoTop.classList.add("go-to-top");
   resultWrapper.appendChild(gotoTop);
 
   function scrollToTop() {
     window.location.hash = "#start-title";
   }
+  gotoTop.addEventListener("click", () => {
+    scrollToTop();
+  });
 }
 
 function filterMovies() {
@@ -145,12 +150,24 @@ function filterMovies() {
 
 function displayAllMovies() {
   const resultWrapper = document.getElementById("result-wrapper");
+
   resultWrapper.innerHTML = "";
 
   for (const [title, details] of Object.entries(movies)) {
     const resultDiv = createMovieElement(title, details);
     resultWrapper.appendChild(resultDiv);
   }
+  const gotoTop = document.createElement("div");
+  gotoTop.innerHTML = '<a href="#" onclick="scrollToTop()">Up</a>';
+  gotoTop.classList.add("go-to-top");
+  resultWrapper.appendChild(gotoTop);
+
+  function scrollToTop() {
+    window.location.hash = "#start-title";
+  }
+  gotoTop.addEventListener("click", () => {
+    scrollToTop();
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
